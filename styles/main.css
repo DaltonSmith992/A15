@@ -1,0 +1,258 @@
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: white;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 99%;
+    max-width: 960px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+/*for tablet in portrait view*/
+@media only screen and (max-width: 959px) {
+    section h1 {
+        font-size: 135%;
+    }
+
+    section h2, aside h2 {
+        font-size: 120%;
+    }
+}
+
+/*for phone in landscape view*/
+@media only screen and (max-width: 767px) {
+    header img {
+        float: none;
+    }
+    header {
+        text-align: center;
+    }
+
+    section {
+        float: none;
+        width: 95.84%;
+    }
+
+    article img {
+        max-width: 30%;
+    }
+
+    aside {
+        float: none;
+        padding-right: 2.08%;
+        width: 95.84%;
+    }
+    #speakers {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #800000 !important;
+    }
+}
+
+/*for phone in portrait view*/
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+/* the styles for the header */
+header {
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background: linear-gradient(30deg, #f6bb73 0%, white 40%, white 50%, white 70%, #f6bb73 100%)
+}
+
+header img {
+	float: left;
+    padding-right: 3.125%;
+    padding-left: 3.125%;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+header .shadow {
+    text-shadow: 1px 1px #800000;
+}
+/* the styles for the nav menu*/
+body #nav_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body #nav_menu li {
+    float: left;
+    width: 20%
+}
+
+body #nav_menu li a{
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+
+body #nav_menu a.current {
+    color: yellow;
+}
+
+body #sub_nav {
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+
+body #sub_nav li {
+    float: none;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body #nav_menu li:hover #sub_nav {
+    display: block;
+}
+/* the styles for the section/aside */
+
+section {
+    width: 54.68%;
+    float: right;
+    padding-left: 2.08%;
+    padding-right: 2.08%;
+    padding-bottom: 2.08%;
+}
+
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+section h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+
+section p {
+    padding-bottom: .5em;
+}
+
+section blockquote {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-style: italic;
+}
+
+section article {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-top: 2px #800000 solid;
+    border-bottom: 2px #800000 solid;
+}
+
+section article img {
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    border: 1px solid;
+    max-width: 40%;
+    min-width: 150px;
+}
+
+section article h2 {
+    padding-top: 0;
+}
+
+section article h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+section ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+    list-style: circle;
+}
+
+section li {
+    padding-bottom: .35em;
+}
+
+aside {
+    width: 22.39%;
+    float: right;
+    padding-left: 2.08%;
+    padding-bottom: 2.08%;
+}
+
+aside h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+
+aside img {
+    padding-bottom: 1em;
+}
+
+aside a:hover {
+    font-style: italic;
+}
+
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+/* the styles for the footer */
+footer p {
+    text-align: center;
+    background-color: #931420;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    clear: both;
+}
